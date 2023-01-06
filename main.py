@@ -1,10 +1,10 @@
 
-# Python File fileno() Method
+# Python File flush() Method
 
-# Returns an integer number (file descriptor) of the file.
-# syntax : file.fileno()
+# The flush() method cleans out the internal buffer.
+# syntax : file.flush()
 
-with open("text.txt", "r") as file2:
-    print(file2.fileno())
-
-# Output : 3
+with open("text.txt", "w") as file2:
+    file2.write("Now the file has one more line!")
+    file2.flush()
+    file2.write("\n...and another one!")
