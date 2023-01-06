@@ -1,10 +1,10 @@
 
-#   Python File writelines() Method
+#  Python File readable() Method
 
-# The writelines() method writes the items of a list to the file.
-# syntax : file.writelines(list)
+# Returns True if the file stream can be read from.
+# syntax : file.readable()
 
-with open("text1.txt", "a") as file2:
-    file2.writelines(["\nSee you soon!", "\nOver and out."])  # list datatype
+with open("text1.txt", "r") as file2:
+    print(file2.readable())
 
-
+# Output : True --> file available for read return true otherwise false.
