@@ -1,14 +1,14 @@
 
-#   Python File readline() Method
+#   Python File readlines() Method
 
-# The readline() method returns one line from the file.
-# syntax : file.readline(size)
-# size	Optional. The number of bytes from the line to return. Default -1,
-# which means the whole line.
+# Return all lines in the file, as a list where each line is an item in the list object:
+# syntax : file.readlines(hint)
+# hint	Optional. If the number of bytes returned exceed the hint number, no more lines will be returned.
+# Default value is  -1, which means all lines will be returned.
 
 with open("text1.txt", "r") as file2:
 
-    # readline() printing the first line from the file
-    print(file2.readline())
+    # readlines() printing the all lines from the file in list datatype.
+    print(file2.readlines())
 
-# Output : Created new file.
+# Output : ['Created new file.\n', 'Welcome here..!\n', 'appending the new to check the code.']
