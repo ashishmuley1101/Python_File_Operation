@@ -1,10 +1,10 @@
 
-#  Python File readable() Method
+# Python File writable() Method
 
-# Returns True if the file stream can be read from.
-# syntax : file.readable()
+# The writable() method returns True if the file is writable, False if not.
+# syntax : file.writeable()
 
-with open("text1.txt", "r") as file2:
-    print(file2.readable())
+with open("text1.txt", "a") as file2:
+    print(file2.writable())
 
-# Output : True --> file available for read return true otherwise false.
+# Output : True --> file available for write return true otherwise false.
