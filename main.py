@@ -1,12 +1,13 @@
 
-#    Use of with...open
+#   Writing to Files in Python
 
-# The with...open syntax to automatically close the file.
-# syntax : with open() as file_name
+# If we try to open a file that doesn't exist, a new file is created.
+# If a file already exists, its content is erased, and new content is added to the file.
+# syntax : with open("text.txt", "w") as file_name:
 
-with open("text.txt") as file1: # by default file on read mode open("text.txt", "r")
+with open("text1.txt", "w") as file2:
 
-    # read the file
-    read_content = file1.read()
-    print(read_content)
+    # write contents to the test2.txt file
+    file2.write('Created new file.')
+    file2.write('\nWelcome here..!')
 
