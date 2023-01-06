@@ -1,10 +1,11 @@
 
-# Python File flush() Method
+# Python File isatty() Method
 
-# The flush() method cleans out the internal buffer.
-# syntax : file.flush()
+# The isatty() method returns True if the file stream is interactive,
+# example: connected to a terminal device.
+# syntax : file.isatty()
 
-with open("text.txt", "w") as file2:
-    file2.write("Now the file has one more line!")
-    file2.flush()
-    file2.write("\n...and another one!")
+with open("text1.txt", "r") as file2:
+    print(file2.isatty())
+
+# Output : False
