@@ -1,10 +1,10 @@
 
-# Python File writable() Method
+# Python File fileno() Method
 
-# The writable() method returns True if the file is writable, False if not.
-# syntax : file.writeable()
+# Returns an integer number (file descriptor) of the file.
+# syntax : file.fileno()
 
-with open("text1.txt", "a") as file2:
-    print(file2.writable())
+with open("text.txt", "r") as file2:
+    print(file2.fileno())
 
-# Output : True --> file available for write return true otherwise false.
+# Output : 3
