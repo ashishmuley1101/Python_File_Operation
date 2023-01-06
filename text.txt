@@ -1,3 +1,2 @@
-
-This is a test file.
-Hello from the test file
+Now the file has one more line!
+...and another one!
