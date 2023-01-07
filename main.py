@@ -1,11 +1,18 @@
 
-# Python File isatty() Method
+# Python File truncate() Method
 
-# The isatty() method returns True if the file stream is interactive,
-# example: connected to a terminal device.
-# syntax : file.isatty()
+# The truncate() method resizes the file to the given number of bytes.
 
-with open("text1.txt", "r") as file2:
-    print(file2.isatty())
+# syntax : file.truncate(size)
+# size	Optional. The size of the file (in bytes) after the truncate. Default None,
+# which means the current file stream position.
 
-# Output : False
+with open("text.txt", "a") as file2:
+    file2.truncate(20)
+
+with open("text.txt", "r") as file3:
+    print(file3.read())
+
+# Output : welcome to python^NULNULNUL
+
+
