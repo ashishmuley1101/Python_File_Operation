@@ -1,18 +1,19 @@
 
-# Python File truncate() Method
+# Python File tell() Method
 
-# The truncate() method resizes the file to the given number of bytes.
+# The tell() method returns the current file position in a file stream.
 
-# syntax : file.truncate(size)
-# size	Optional. The size of the file (in bytes) after the truncate. Default None,
-# which means the current file stream position.
+# syntax : file.tell()
 
-with open("text.txt", "a") as file2:
-    file2.truncate(20)
 
-with open("text.txt", "r") as file3:
-    print(file3.read())
+with open("text.txt", "r") as file2:
+    print(file2.readline())
+    print(file2.tell())
 
-# Output : welcome to python^NULNULNUL
+
+# Output :
+# welcome to python^NULNULNUL
+#20
+
 
 
